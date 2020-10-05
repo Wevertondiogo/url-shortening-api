@@ -1,0 +1,18 @@
+%d-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%-d-column {
+  display: flex;
+  flex-direction: column;
+}
+%d-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@mixin width-and-height($width, $height) {
+  width: $width;
+  height: $height;
+}
