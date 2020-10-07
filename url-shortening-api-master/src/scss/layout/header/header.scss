@@ -1,0 +1,43 @@
+.header {
+    .container-header{
+        @extend %d-between;
+        @include width-and-height(90%, 80px);
+        margin: 0 auto;
+        .nav{
+            width: 40%;
+            li{
+                @extend %d-evenly;
+                .link{
+                    text-decoration: none;
+                    color: $dark;
+                    &:first-child{
+                        font: {
+                            size: 1.6rem;
+                            weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+        .group-btn{
+            @extend %d-evenly;
+            @include width-and-height(20%, 50%);
+            .btn{
+                @include width-and-height(40%, 100%);
+                border-radius: 20px;
+                border: none;
+                background-color: transparent;
+                color: $grayish-violet;
+                font: {
+                    family: 'Poppins';
+                    weight: 700;
+                }
+                &:last-child {
+                    background-color: $cyan;
+                    color: #fff;
+
+                }
+            }
+        }
+    }
+}

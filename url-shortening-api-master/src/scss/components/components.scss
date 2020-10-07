@@ -10,8 +10,13 @@
 %d-evenly {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
-
+%d-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 @mixin width-and-height($width, $height) {
   width: $width;
   height: $height;

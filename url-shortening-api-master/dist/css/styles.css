@@ -1,0 +1,43 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap";
+.header .container-header .nav li, .header .container-header .group-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.header .container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header .container-header {
+  width: 90%;
+  height: 80px;
+  margin: 0 auto; }
+  .header .container-header .nav {
+    width: 40%; }
+    .header .container-header .nav li .link {
+      text-decoration: none;
+      color: #3b3054; }
+      .header .container-header .nav li .link:first-child {
+        font-size: 1.6rem;
+        font-weight: 700; }
+  .header .container-header .group-btn {
+    width: 20%;
+    height: 50%; }
+    .header .container-header .group-btn .btn {
+      width: 40%;
+      height: 100%;
+      border-radius: 20px;
+      border: none;
+      background-color: transparent;
+      color: #9e9aa7;
+      font-family: 'Poppins';
+      font-weight: 700; }
+      .header .container-header .group-btn .btn:last-child {
+        background-color: #2acfcf;
+        color: #fff; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; }
