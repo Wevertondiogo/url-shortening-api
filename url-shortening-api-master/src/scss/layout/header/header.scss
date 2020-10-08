@@ -1,4 +1,5 @@
 .header {
+    margin-top: 20px;
     .container-header{
         @extend %d-between;
         @include width-and-height(90%, 80px);
@@ -9,7 +10,7 @@
                 @extend %d-evenly;
                 .link{
                     text-decoration: none;
-                    color: $dark;
+                    color: $very-dark-violet;
                     &:first-child{
                         font: {
                             size: 1.6rem;
@@ -20,22 +21,17 @@
             }
         }
         .group-btn{
-            @extend %d-evenly;
+            @extend %d-baseline;
             @include width-and-height(20%, 50%);
+
             .btn{
+                @extend %btn;
                 @include width-and-height(40%, 100%);
-                border-radius: 20px;
-                border: none;
                 background-color: transparent;
                 color: $grayish-violet;
-                font: {
-                    family: 'Poppins';
-                    weight: 700;
-                }
                 &:last-child {
                     background-color: $cyan;
                     color: #fff;
-
                 }
             }
         }

@@ -1,5 +1,5 @@
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap";
-.header .container-header .nav li, .header .container-header .group-btn {
+.header .container-header .nav li, .section {
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
@@ -9,33 +9,72 @@
   justify-content: space-between;
   align-items: center; }
 
-.header .container-header {
-  width: 90%;
-  height: 80px;
+.header .container-header .group-btn {
+  display: flex;
+  justify-content: baseline;
+  align-items: center; }
+
+.header .container-header .group-btn .btn, .section .article .btn {
+  border-radius: 30px;
+  border: none;
+  background-color: #2acfcf;
+  color: #fff;
+  font-family: 'Poppins';
+  font-weight: 700; }
+
+.header {
+  margin-top: 20px; }
+  .header .container-header {
+    width: 90%;
+    height: 80px;
+    margin: 0 auto; }
+    .header .container-header .nav {
+      width: 40%; }
+      .header .container-header .nav li .link {
+        text-decoration: none;
+        color: #232127; }
+        .header .container-header .nav li .link:first-child {
+          font-size: 1.6rem;
+          font-weight: 700; }
+    .header .container-header .group-btn {
+      width: 20%;
+      height: 50%; }
+      .header .container-header .group-btn .btn {
+        width: 40%;
+        height: 100%;
+        background-color: transparent;
+        color: #9e9aa7; }
+        .header .container-header .group-btn .btn:last-child {
+          background-color: #2acfcf;
+          color: #fff; }
+
+.section {
+  width: 85%;
   margin: 0 auto; }
-  .header .container-header .nav {
-    width: 40%; }
-    .header .container-header .nav li .link {
-      text-decoration: none;
-      color: #3b3054; }
-      .header .container-header .nav li .link:first-child {
-        font-size: 1.6rem;
-        font-weight: 700; }
-  .header .container-header .group-btn {
-    width: 20%;
-    height: 50%; }
-    .header .container-header .group-btn .btn {
-      width: 40%;
-      height: 100%;
-      border-radius: 20px;
-      border: none;
-      background-color: transparent;
-      color: #9e9aa7;
-      font-family: 'Poppins';
+  .section .article {
+    width: 38%; }
+    .section .article h1 {
+      margin: 0;
+      line-height: 90px;
+      color: #232127;
+      font-size: 4.3rem;
       font-weight: 700; }
-      .header .container-header .group-btn .btn:last-child {
-        background-color: #2acfcf;
-        color: #fff; }
+    .section .article p {
+      margin: 5px;
+      line-height: 28px;
+      color: #9e9aa7;
+      font-size: 1.3rem; }
+    .section .article .btn {
+      width: 38%;
+      height: 50px;
+      margin-top: 28px;
+      font-size: 1.1rem; }
+  .section img {
+    position: relative;
+    left: 11%; }
+
+.main {
+  margin-top: 60px; }
 
 body {
   margin: 0;

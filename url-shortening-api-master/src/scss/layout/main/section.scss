@@ -1,0 +1,35 @@
+    .section {
+        @extend %d-evenly;
+        width: 85%;
+        margin: 0 auto;
+        .article{
+            width: 38%;
+            h1{
+                margin: 0;
+                line-height: 90px;
+                color: $very-dark-violet;
+                font: {
+                    size: 4.3rem;
+                    weight: 700;
+                }
+            }
+            p{
+                margin: 5px;
+                line-height: 28px;
+                color: $grayish-violet;
+                font: {
+                    size: 1.3rem;
+                }
+            }
+            .btn{
+                @extend %btn;
+                @include width-and-height(38%, 50px);
+                margin-top: 28px;
+                font-size: 1.1rem;
+            }
+        }
+        img{
+            position: relative;
+            left: 11%;            
+        }
+    }
